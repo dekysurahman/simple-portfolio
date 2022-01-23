@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../font/OpenSans-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: #212429;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "hero about"
+    "hero about";
+  gap: 50px;
+  margin: 100px;
+}
+
+.hero {
+  grid-area: "hero";
+  place-items: center center;
+  text-align: center;
+  grid-column: 1;
+}
+
+.hero img {
+  border-radius: 50%;
+  border: 5px solid #eee;
+}
+
+.about {
+  grid-area: "about";
+  place-items: center center;
+  text-align: center;
+  grid-column: 0.5;
+}
