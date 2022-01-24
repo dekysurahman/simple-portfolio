@@ -20,32 +20,26 @@ body {
 
 .header {
   display: grid;
-  grid-template-areas: "photo profile profile about about about";
-}
-
-.photo {
-  width: 250px;
-  height: 250px;
-  grid-area: "photo";
-  background-image: url(../img/profile.png);
-  border-radius: 50%;
-  border: 5px solid #eaeaea;
+  grid-template-areas: "profile heading about";
+  gap: 50px;
 }
 
 .profile {
-  height: 250px;
   grid-area: "profile";
+  max-width: 250px;
+}
+
+.profile img {
+  border-radius: 50%;
+  border: 3px solid rgba(200, 200, 200, 0.5);
+  place-content: center;
+}
+
+.heading {
+  grid-area: "heading";
 }
 
 .about {
-  height: 250px;
   grid-area: "about";
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  gap: 10px;
-}
-
-.content {
-  flex-direction: row;
+  width: 600px;
 }
