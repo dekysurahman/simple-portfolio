@@ -15,29 +15,37 @@ body {
 }
 
 .container {
+  margin: 50px;
+}
+
+.header {
   display: grid;
-  grid-template-areas:
-    "hero about"
-    "hero about";
-  gap: 50px;
-  margin: 100px;
+  grid-template-areas: "photo profile profile about about about";
 }
 
-.hero {
-  grid-area: "hero";
-  place-items: center center;
-  text-align: center;
-  grid-column: 1;
-}
-
-.hero img {
+.photo {
+  width: 250px;
+  height: 250px;
+  grid-area: "photo";
+  background-image: url(../img/profile.png);
   border-radius: 50%;
-  border: 5px solid #eee;
+  border: 5px solid #eaeaea;
+}
+
+.profile {
+  height: 250px;
+  grid-area: "profile";
 }
 
 .about {
+  height: 250px;
   grid-area: "about";
-  place-items: center center;
-  text-align: center;
-  grid-column: 0.5;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 10px;
+}
+
+.content {
+  flex-direction: row;
 }
