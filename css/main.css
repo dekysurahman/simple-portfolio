@@ -13,30 +13,28 @@ body {
   background-color: #ddd;
 }
 
-.containter {
+.container {
   max-width: 1000px;
-  background-color: white;
+  margin: 50px auto;
+  font-size: 14px;
 }
 
 .header {
-  max-width: 1000px;
   background-color: darkblue;
   color: lightblue;
-  margin: 50px auto;
   display: flex;
   place-items: center;
   border-radius: 15px 15px 0 0;
+  flex-wrap: wrap;
 }
 
 .heading {
   flex: 1;
   box-sizing: border-box;
-  font-size: 14px;
   text-shadow: 0 1px 3px black;
 }
 
 .heading.title {
-  font-size: 18px;
   margin-left: 50px;
 }
 
@@ -49,4 +47,35 @@ body {
   border-radius: 50%;
   border: 3px solid lightblue;
   box-shadow: 0 3px 5px black;
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1.5;
+  text-align: justify;
+  background-color: #fff;
+}
+
+.side {
+  width: 45%;
+  padding-top: 30px;
+}
+
+.state {
+  font-weight: 900;
+  color: darkblue;
+}
+
+.study {
+  font-weight: 600;
+}
+
+.focus {
+  font-weight: 200;
+}
+
+section {
+  margin-bottom: 30px;
 }
