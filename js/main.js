@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const idName = document.querySelector("#name");
 const idGender = document.querySelector("#gender");
 
@@ -16,3 +17,5 @@ function typeWriter() {
 }
 
 typeWriter();
+=======
+>>>>>>> 7102e6b6a9f6309d22e56ff9f7ebfdf584741d54
